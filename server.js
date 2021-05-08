@@ -4,7 +4,7 @@ require('dotenv').config();
 const cors =require('cors');
 app.use(cors());
 const weather = require('./Data/weather.json')
-const port = process.env.REACT_APP_PORT||8081;
+const port = process.env.PORT||8081;
 
 app.get('/', function (req, res) {
   res.send("hello")
